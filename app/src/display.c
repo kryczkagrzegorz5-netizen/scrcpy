@@ -131,6 +131,7 @@ sc_display_to_sdl_color_space(enum AVColorSpace color_space,
 
     switch (color_space) {
         case AVCOL_SPC_BT709:
+        case AVCOL_SPC_RGB:
             return full_range ? SDL_COLORSPACE_BT709_FULL
                               : SDL_COLORSPACE_BT709_LIMITED;
         case AVCOL_SPC_BT470BG:
